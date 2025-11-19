@@ -25,7 +25,7 @@ pipeline {
         }
         stage('kubectl check|create namespace') {
             steps {
-                sh "if [$(kubectl get namespace | grep ${NAMESPACE}) -eq '']; then kubectl create namespace ${NAMESPACE}; fi"
+                sh "if [\$(kubectl get namespace | grep ${NAMESPACE}) -eq '']; then kubectl create namespace ${NAMESPACE}; fi"
             }
         }
         stage('prometgeus\grafana update|install') {
