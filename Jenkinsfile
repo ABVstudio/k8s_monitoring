@@ -10,6 +10,7 @@ pipeline {
         URL_inf    = 'git@github.com:ABVstudio/k8s_monitoring.git'
         REGION     = 'us-east-1'
         NAMESPACE  = 'monitoring'
+        CLUSTER    = 'lepseyname_cluster'
     }
 
     stages {
