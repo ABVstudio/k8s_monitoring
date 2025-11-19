@@ -12,3 +12,6 @@ prometheus:
           any: true
         serviceMonitorSelector: {}
         serviceMonitorSelectorNilUsesHelmValues: false
+grafana:
+  service:
+    externalIPs: ["172.20.49.181"]
