@@ -28,7 +28,7 @@ pipeline {
                 sh "if [\$(kubectl get namespace | grep ${NAMESPACE}) -eq '']; then kubectl create namespace ${NAMESPACE}; fi"
             }
         }
-        stage('prometgeus\grafana update|install') {
+        stage('prometgeus|grafana update|install') {
             steps {
                 sh "helm upgrade --install -f ${Name_inf}/myvalues.yaml monitoring oci://ghcr.io/prometheus-community/charts/kube-prometheus-stack --namespace ${NAMESPACE}"
             }
