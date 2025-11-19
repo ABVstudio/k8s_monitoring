@@ -14,4 +14,4 @@ prometheus:
         serviceMonitorSelectorNilUsesHelmValues: false
 grafana:
   service:
-    externalIPs: ["172.20.49.181"]
+    externalIPs: ["172.20.55.55"]
